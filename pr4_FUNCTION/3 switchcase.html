@@ -1,0 +1,44 @@
+<script>
+
+let p = parseInt(prompt("Enter the First Number:"));
+let q = parseInt(prompt("Enter the Second Number:"));
+let choice = parseInt(prompt(` p is: ${p} \n q is: ${q} \n Enter Your Choice (1,2,3,4)`));
+
+function add(p, q) {
+    return p + q;
+}
+
+function sub(p, q) {
+    return p - q;
+}
+
+function mul(p, q) {
+    return p * q;
+}
+
+function div(p, q) {
+    return p / q;
+}
+
+switch (choice) {
+    case 1:
+        alert(`sum of ${ p } and ${ q } is: ${ add(p, q) }`);
+        break;
+
+    case 2:
+        alert(`sub of ${ p } and ${ q } is: ${ sub(p, q) }`);
+        break;
+
+    case 3:
+        alert(`mul of ${ p } and ${ q } is: ${ mul(p, q) }`);
+        break;
+
+    case 4:
+        alert(`div of ${ p } and ${ q } is: ${ div(p, q) }`);
+        break;
+
+    default:
+        alert("wrong choice.");
+}
+
+</script>
